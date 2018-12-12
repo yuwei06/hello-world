@@ -1,0 +1,178 @@
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Main</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <script type="text/javascript">
+      function clickem(){
+    var reg=new RegExp("^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$");
+    var name=document.getElementById("email")
+    if(name=="")
+    {
+        document.getElementById("error").innerText="邮箱不能为空";
+    }
+    else if(!reg.test(name.value))
+    {
+        document.getElementById("error").innerText="邮箱输入错误";
+    }
+}
+    </script>
+</head>
+<body>
+    <div class="main">
+            
+        <header>
+            <ul>
+                <li ><img src="image/logo_light.png"></li>
+                <li class="top" id="top1"><a href="Main.html">Home</a>
+             <ul class="main_1">
+                 <li><a href="Main.html"><span>Saas landing</span></a></li>
+                 <li><a href="Index1.html"><span>Moblie App</span></a></li>
+                 <li><a href="Index2.html"><span>eBook Landing</span></a></li>
+             </ul></li>
+                <li class="top"><a href="Main1.html">Features</a></li>
+                <li class="top"><a href="Main2.html">Pricing</a></li>
+                <li class="top"><a href="Main3.html">Lcons</a></li>
+                <li class="top"><a href="Main4.html">Knowledge Base</a></li>
+                <li class="top" id="btn"><a href="Main.html"><span class="span">Sign Up</span></a></li>
+            </ul> 
+         </header>
+        <content>
+        <div class="main_one">
+            <div class="bt">
+           <div class="main_one_left">
+               <h2 class="h2">New platform for managing
+                your business expenses</h2>
+               <input type="button" value="Try it Now" class="main_one_left_btn">
+               <span>How it Works</span>
+           </div> 
+        
+           <div class="main_one_right">
+               <img src="image/app.png" >
+           </div> 
+        </div>
+        </div>
+        <div class="main_two">
+            <ul>
+                <li class="main_two_drak"><a href="Main.html"><img src="image/partner_logo_dark_1.png"></a></li>
+                <li><a href="Main.html"><img src="image/partner_logo_dark_2.png"></a></li>
+                <li><a href="Main.html"><img src="image/partner_logo_dark_3.png"></a></li>
+                <li><a href="Main.html"><img src="image/partner_logo_dark_4.png"></a></li>
+                <li><a href="Main.html"><img src="image/partner_logo_dark_5.png"></a></li>
+            </ul>
+        </div>
+        <hr>
+        <div  class="main_three">
+           <p class="p1">CREATE. VISUALIZE. DEPLOY</p>
+           <p class="p2">An idea that takes the parts of a structure and turns them into a whole system. </p>
+           <p class="p3">Practice is the frequent and continued contemplation of the mode of executing </p>
+           <p class="p4">any given work, or of the mere operation.</p>
+        </div>
+        <hr>
+        <div class="main_four">
+            <div class="main_four_left">
+                <img src="image/Emaus _ Saas Landing_files/1.jpg">
+            </div>
+            <div class="main_four_right">
+            <p class="main_four_p1">Intuitive interface for </p>
+            <p class="main_four_p2">collaboration</p>
+            <p class="main_four_p3" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
+            <p class="main_four_p4" >do eiusmod tempor incididunt ut labore et dolore. Lorem </p>
+            <p class="main_four_p5" >ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
+            <p class="main_four_p6" >eiusmod tempor incididunt ut labore et dolore</p>
+        </div>
+        </div>
+        <hr>
+        <div class="main_five">
+                <div class="main_five_left">
+                        <p class="main_five_p1">Operate the software in </p>
+                        <p class="main_five_p2">real time from any device</p>
+                        <p class="main_five_p3" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  </p>
+                        <p class="main_five_p4" >do eiusmod tempor incididunt ut labore et dolore. Lorem </p>
+                        <p class="main_five_p5" >do eiusmod tempor incididunt ut labore et dolore. Lorem  </p>
+                        <p class="main_five_p6" >eiusmod tempor incididunt ut labore et dolore</p> 
+                    </div>
+
+                    <div class="main_five_right">
+                            <img src="image/Emaus _ Saas Landing_files/2.jpg">
+                        </div>
+        </div>
+        <hr>
+        <div class="main_six">
+            <div class="main_six_left">
+              <a href="#"><img src="image/163441.png"></a>
+              <h2>Well Documented</h2>
+              <p>Our Theme is a very slick and clean e-commerce template with endless possibilities. 
+                  Creating an awesome website with this Theme. 
+                  Our Theme is a very slick and clean e-commerce template with endless 
+                  possibilities. Creating an awesome website with this Theme.</p>
+            </div>
+            <div class="main_six_right">
+                    <a href="#"><img src="image/163441.png"></a>
+                    <h2>Well Documented</h2>
+                    <p>Our Theme is a very slick and clean e-commerce template with endless possibilities. 
+                        Creating an awesome website with this Theme. 
+                        Our Theme is a very slick and clean e-commerce template with endless 
+                        possibilities. Creating an awesome website with this Theme.</p>
+            </div>
+        </div>
+
+        </content>
+       <footer class="footer">
+      <p class="footer_p1">Ready to start a free 14 days trial?</p>
+      <p class="footer_p2">Create an account now and generate more leads</p>
+      <div class="txt"> <input type="text"value="Your email" class="text">
+        <a href="#" class="footer_a" id="email" onclick="clickem()">Subscribe</a><span id="error"></span>
+    </div>
+      <div class="footer_last">
+          <div class="last_left">
+              <p class="left_p">emaus</p>
+              <div class="left_tr">
+                  <ul >
+                  <li><a href="Main.html" class="aa">图</a></li>
+                  <li><a href="Main.html" class="aa">图</a></li>
+                  <li><a href="Main.html" class="aa">标</a></li>
+                  <li><a href="Main.html" class="aa">标</a></li>
+              </tr>
+            </div>
+              
+          </div>
+          <div class="last_right">
+              <div class="aaa">
+                  <h5>Product</h5>
+                 <ul>
+                     <li><a href="#">About</a></li>
+                     <li><a href="#">Features</a></li>
+                     <li><a href="#">Resources</a></li>
+                     <li><a href="#">Affiliates</a></li>
+                 </ul>
+              </div >
+              <div class="aaa">
+                    <h5>Support</h5>
+                   <ul>
+                       <li><a href="#">Help Center</a></li>
+                       <li><a href="#">Support Policy</a></li>
+                       <li><a href="#">F.A.Q</a></li>
+                       <li><a href="#">Privacy & Terms</a></li>
+                   </ul>
+                </div >
+                <div class="aaa">
+                        <h5>Company</h5>
+                       <ul>
+                           <li><a href="#">Team</a></li>
+                           <li><a href="#">Join Us</a></li>
+                           <li><a href="#">Blog</a></li>
+                           <li><a href="#">Contact</a></li>
+                       </ul>
+                    </div>
+          </div>
+      </div>
+      <hr>
+      <p class="last_p">© 2017 Emaus, Made by DeoThemes</p>
+       </footer>
+    </div>
+</body>
+</html>
